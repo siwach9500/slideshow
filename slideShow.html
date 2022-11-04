@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <style>
+         div>img{
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+        }
+        h1{
+            color: rgb(180, 6, 6);
+        }
+        p{
+            margin-top: -15px;
+            margin-bottom: 40px;
+            color: burlywood;
+        }
+        input{
+            width: 400px;
+            display: block;
+            margin-bottom: 20px;
+            height: 25px;
+        }
+        button{
+            background-color: rgb(201, 17, 17);
+            color: antiquewhite;
+            font-weight: bolder;
+            padding: 5px;
+            border-radius: 6px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slide Show</h1>
+    <p>firstly,enter image url`s. then,click submit.After entering several urls click on sart slides</p>
+    <input type="text" id="image_url" placeholder="Enter Image URL">
+    <button onclick="addImage()">Submit</button>
+    <button onclick="startSlide()">Start Slides</button>
+    <button onclick="stop()">Pause</button>
+    <div id="slidesbox"></div>
+
+</body>
+</html>
+
+<script src="index.js"></script>
